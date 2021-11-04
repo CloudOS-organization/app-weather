@@ -1,5 +1,5 @@
-import {html , Type} from '../../asset/js/deps.js';
-import {Window} from '../../asset/js/component/mod.js';
+import {html , Type} from 'https://doc.typable.dev/js/deps.js';
+import {Window} from 'https://doc.typable.dev/js/component/mod.js';
 
 export default class Weather extends Window {
     static name = 'weather-app';
