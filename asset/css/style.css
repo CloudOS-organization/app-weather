@@ -1,0 +1,335 @@
+weather-app .frame {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#12b4fd), color-stop(50%, #116bf3));
+  background-image: linear-gradient(#12b4fd 0%, #116bf3 50%);
+}
+
+weather-app .frame .head .title {
+  color: #fff;
+}
+
+weather-app .frame .body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 20px;
+  padding: 15px;
+  margin-top: 0;
+  overflow-y: auto;
+  max-height: calc(100% - 38px - 5px);
+  position: relative;
+  color: #fff;
+}
+
+weather-app .frame .body:before {
+  content: '';
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 38px;
+  width: calc(100% - 8px - 5px);
+  height: 15px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#13aafb), to(transparent));
+  background: linear-gradient(to bottom, #13aafb, transparent);
+}
+
+weather-app .frame .body:after {
+  content: '';
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 5px;
+  width: calc(100% - 8px - 5px);
+  height: 15px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#126cf3), to(transparent));
+  background: linear-gradient(to top, #126cf3, transparent);
+}
+
+weather-app .frame .body::-webkit-scrollbar, weather-app .frame .body::-webkit-scrollbar-corners {
+  background-color: transparent;
+  width: 8px;
+  height: 8px;
+}
+
+weather-app .frame .body::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+weather-app .frame .body::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+}
+
+weather-app .frame .body .weather__container {
+  width: 100%;
+}
+
+weather-app .frame .body .weather__container .weather__search {
+  width: 100%;
+}
+
+weather-app .frame .body .weather__container .weather__search input {
+  display: block;
+  width: 100%;
+  max-width: 700px;
+  border: none;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px 20px;
+  margin: auto;
+  outline: none;
+}
+
+weather-app .frame .body .weather__container .loading__spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  min-height: 350px;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper {
+  max-width: 700px;
+  margin: 20px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__icon {
+  min-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 1.4rem;
+  font-weight: 100;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__temp {
+  min-width: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__temp h1 {
+  margin: 0;
+  font-size: 5rem;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__temp span {
+  font-size: 1.3rem;
+  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__temp span img {
+  width: 25px;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__wind {
+  min-width: 233px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__feels_like {
+  min-width: 233px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+weather-app .frame .body .weather__container .weather__wrapper .weather__temp_max {
+  min-width: 233px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+weather-app .frame .body .weather__container .weather__spacer {
+  width: 100%;
+  height: 1px;
+  margin: auto;
+}
+
+weather-app .frame .body .weather__container .week-weather__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(260px, max-content))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(260px, -webkit-max-content));
+      grid-template-columns: repeat(auto-fit, minmax(260px, max-content));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: initial;
+  gap: 35px;
+  margin: auto;
+}
+
+weather-app .frame .body .weather__container .week-weather__container .week-weather__item {
+  background: #118bf7;
+  padding: 12px;
+  border-radius: 8px;
+  min-width: 260px;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+weather-app .frame .body .weather__container .week-weather__container .week-weather__item .image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-ring div {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  -webkit-animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+          animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+}
+
+.lds-ring div:nth-child(1) {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.lds-ring div:nth-child(2) {
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
+}
+
+.lds-ring div:nth-child(3) {
+  -webkit-animation-delay: -0.15s;
+          animation-delay: -0.15s;
+}
+
+@-webkit-keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes lds-ring {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}

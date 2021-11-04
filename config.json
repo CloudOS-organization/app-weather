@@ -1,0 +1,10 @@
+{
+    "id": "weather",
+    "name": "Weather",
+    "icon": "asset/img/icon.png",
+    "main": "main.js",
+    "style": "asset/css/style.css",
+    "env": {
+        "API_KEY": "5e7b3593d967afe267fdb419dd6e43d7"
+    }  
+}
